@@ -79,6 +79,6 @@ If you are referring to our work, please cite it as follows:
     pages = "999--1010"} -->
 
 ## Learnings and Further Work
-Through this paper, we have presented a comprehensive study of different approximation methods for the MSTSP that highlight critical factors that must influence the choice of an algorithm in practical settings. Our procedural philosophy can further be extended to the study of other NP-hard problems of practical im- portance.
+Through this paper, we have presented a comprehensive study of different approximation methods for the MSTSP that highlight critical factors that must influence the choice of an algorithm in practical settings. Our procedural philosophy can further be extended to the study of other NP-hard problems of practical importance.
 
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5mg2ififv86&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
