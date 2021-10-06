@@ -23,12 +23,12 @@ In this work, we describe six algorithms for MSTSP inspired by prior work in the
 
 The six algorithms that we describe in this work are:
 
-#### Naive Greedy Algorithm
-#### Naive Weave Algorithm
-#### Hoffmann Weave Algorithm
-#### Dirac Algorithm
-#### Pure 2-opt Algorithm
-#### Randomized 2-opt Algorithm
+- Naive Greedy Algorithm
+- Naive Weave Algorithm
+- Hoffmann Weave Algorithm
+- Dirac Algorithm
+- Pure 2-opt Algorithm
+- Randomized 2-opt Algorithm
 
 Experiments that we perform to benchmark these algorithms can be broadly split into three categories:
 - Closeness of algorithm predictions to the scatter bound
