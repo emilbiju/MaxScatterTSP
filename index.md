@@ -2,14 +2,14 @@
 layout: default
 title: Home
 nav_order: 1
-description: "MaxScatterTSP++ presents six practical algorithms for the Maximum Scatter Travelling Salesman Problem and performs perturbation studies to analyze trade-offs among the runtime, quality and stability of these algorithms."
+description: "MaxScatterTSP++ presents six practical algorithms for the Maximum Scatter TSP and performs perturbation studies to analyze trade-offs among the runtime, quality and stability of these algorithms."
 permalink: /
 ---
 
 # Perturbation Analysis for Maximum Scatter TSP
 {: .fs-8.5}
 
-MaxScatterTSP++ presents six practical algorithms for the Maximum Scatter Travelling Salesman Problem and performs perturbation studies to analyze trade-offs among the runtime, quality and stability of these algorithms.
+MaxScatterTSP++ presents six practical algorithms for the Maximum Scatter TSP and performs perturbation studies to analyze trade-offs among the runtime, quality and stability of these algorithms.
 {: .fs-6 .fw-300 }
 
 [ALENEX 2022 Paper](https://www.aclweb.org/anthology/2020.coling-main.87/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/emilbiju/MaxScatterTSP){: .btn .fs-5 .mb-4 .mb-md-0 }
