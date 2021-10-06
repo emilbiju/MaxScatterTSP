@@ -30,14 +30,15 @@ The six algorithms that we describe in this work are:
 - Pure 2-opt Algorithm
 - Randomized 2-opt Algorithm
 
-Experiments that we perform to benchmark these algorithms can be broadly split into three categories:
+
+Our benchmarking experiments can be broadly split into three categories:
 - Closeness of algorithm predictions to the scatter bound
 - Deviation of maximum scatter predictions under perturbation
 - Variation in the runtime of algorithms
 
-<p align="center">
+<!-- <p align="center">
    <img src="assets/images/gesture_sample.jpg" width=400 height=400>
-</p>
+</p> -->
 
 ## Key Contributions
 
@@ -50,11 +51,11 @@ Experiments that we perform to benchmark these algorithms can be broadly split i
 Our paper on this work titled "Perturbation Analysis of Practical Algorithms for the Maximum Scatter Travelling Salesman Problem" has been accepted as a conference paper at the [ALENEX workshop](https://www.siam.org/conferences/cm/conference/alenex22) as part of the Symposium on Discrete Algorithms (SODA), 2022 to be held at Alexandria, Virginia, U.S.A.
 <!-- You could also refer to our [presentation poster](https://emilbiju.github.io/indic-swipe/assets/IndicSwipe-Poster.pdf). -->
 
-<p align="center">
+<!-- <p align="center">
    <a href="https://emilbiju.github.io/indic-swipe/assets/IndicSwipe-Poster.pdf">
    <embed src="assets/IndicSwipe-Poster.pdf" type="application/pdf" width=800 height=500 />
    </a>
-</p>
+</p> -->
 
 ## People
 
