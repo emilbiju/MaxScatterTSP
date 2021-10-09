@@ -1,6 +1,4 @@
-This file has instructions to run the code
-
-### Code Files
+### Code
 There are 5 code files in 'code_files' folder:
 - `main.cpp`: Main file to run
 - `naive_greedy.cpp`: Contains code for naive greedy algorithm
@@ -8,10 +6,10 @@ There are 5 code files in 'code_files' folder:
 - `dirac.cpp`: Contains code for Dirac algorithm
 - `_2opt.cpp`: Contains code for pure 2-opt and rand 2-opt
 
-### To run the code
+**To run the code**
 - Place the `TSP_data_files` folder inside the `code_files` folder
 - cd to the `code_files` folder
 - Run: `g++ main.cpp dirac.cpp _2opt.cpp weave.cpp naive_greedy.cpp -o main.out`. Alternatively, the executable `ch` can be run (`./ch`).
 
-### DATA
+### Data
 The `TSP_data_files` folder provides graph input files used for experiments performed in the paper and are derived from the TSPLIB library.
