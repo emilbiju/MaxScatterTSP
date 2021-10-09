@@ -1,5 +1,5 @@
 ### Code
-There are 5 code files in 'code_files' folder:
+There are 5 code files in `code_files` folder:
 - `main.cpp`: Main file to run
 - `naive_greedy.cpp`: Contains code for naive greedy algorithm
 - `weave.cpp`: Contains code for naive and Hoffmann weave algorithms
