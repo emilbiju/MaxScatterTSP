@@ -320,15 +320,9 @@ int main()  //start
                     b=std_dev_e;  //'emsun'=1 => variance = beta * min_dist between any pair of nodes
                 }                    
                 if (randomness==1)
-                {
-                    cout << "gaussian: "<<std_dev<<endl;
                     MyFile <<"gaussian: "<<std_dev<<endl;
-                }
                 else if (randomness==2)
-                {
-                    cout << "uniform: "<<a<<','<<b<<endl;
                     MyFile <<"uniform: "<<a<<','<<b<<endl;
-                }
                 for(int k=0;k<counter;k++)  //perturbation iterations over a fixed (mean, sigma)
                 {
                     scatter_bound = pow(2,16)-1;  //INFINITE initial scatter bound (minimum among all 2nd max edge of all vertices)
@@ -347,21 +341,19 @@ int main()  //start
                     naive_greedy_result = naive_greedy(new_adj_mat);
                     end = clock();  //end time to evaluate runtime of 'naive_greedy'
                     time_taken.push_back(double(end-start)/double(CLOCKS_PER_SEC));  //storing execution time in a vector
-                    opt_path = dirac(new_adj_mat, &dirac_result, &scatter_bound);
                     start=clock();
                     opt_path = dirac(new_adj_mat, &dirac_result, &scatter_bound);
                     end = clock();
                     time_taken.push_back(double(end-start)/double(CLOCKS_PER_SEC));
-                    cout<<"count0: "<<MAX_ITER<<endl;
                     start=clock();
                     opt_path =_2opt(opt_path, new_adj_mat, &MAX_ITER, &pure_2opt_result,0);  //randomize=0
                     end = clock();
-                    cout<<"count1: "<<MAX_ITER<<endl;
+                    cout<<"count1: "<<MAX_ITER<<endl;  //maximum #iterations for "pure-2opt" to converge
                     time_taken.push_back(double(end-start)/double(CLOCKS_PER_SEC));
                     start=clock();
                     opt_path =_2opt(opt_path, new_adj_mat, &MAX_ITER, &pure_2opt_randomize_result,1);  //randomize=1   
                     end = clock();
-                    cout<<"count2: "<<MAX_ITER<<endl;
+                    cout<<"count2: "<<MAX_ITER<<endl;  //maximum #iterations taken for "randomized-2opt" to converge
                     time_taken.push_back(double(end-start)/double(CLOCKS_PER_SEC));
                     start=clock();
                     naive_weave_result=max(max(naive_weave(new_nodes,1), naive_weave(new_nodes,0.5)), naive_weave(new_nodes,2));
@@ -371,7 +363,7 @@ int main()  //start
                     hoffmann_weave_result=max(max(hoffmann_weave(new_nodes,1), hoffmann_weave(new_nodes,0.5)), hoffmann_weave(new_nodes,2));
                     end = clock();
                     time_taken.push_back(double(end-start)/double(CLOCKS_PER_SEC));
-                    cout<<"k: "<<k<<endl;  //printing obtained results in terminal
+                    cout<<"k: "<<k<<endl;  //printing obtained results in terminal, starting with perturbation's iteration count
                     cout<<"0. scatter_bound: "<<scatter_bound<<endl;
                     cout<<"1. naive greedy: "<<naive_greedy_result<<" ;alpha: "<<naive_greedy_result/scatter_bound<<" ;time_taken: "<<time_taken[0]<<endl;
                     cout<<"2. dirac: "<<dirac_result<<" ;alpha: "<<dirac_result/scatter_bound<<" ;time_taken: "<<time_taken[1]<<endl;
@@ -390,4 +382,4 @@ int main()  //start
     MyFile.close();
     return 0;
 }
-//ran on 'gcloud' for results in paper. check logs for data.
+//ran the setup in google-cloud and parsed 'final_results' data log file to obtain results in paper.
