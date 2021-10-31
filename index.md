@@ -12,7 +12,7 @@ permalink: /
 MaxScatterTSP++ presents six practical algorithms for the Maximum Scatter TSP and performs perturbation studies to analyze trade-offs among the runtime, quality and stability of these algorithms.
 {: .fs-6 .fw-300 }
 
-[ALENEX 2022 Paper](assets/ALENEX_paper_Emil_Sundar.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Code & Data](https://github.com/emilbiju/MaxScatterTSP){: .btn .fs-5 .mb-4 .mb-md-0 }
+[ALENEX 2022 Paper](assets/ALENEX_paper_Emil_Sundar.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View Code and Data](https://github.com/emilbiju/MaxScatterTSP){: .btn .fs-5 .mb-4 .mb-md-0 }
 ---
 
 ## About
